@@ -1,0 +1,93 @@
+:root {
+    --theme-bg: #000;
+    --theme-compliment-1: #101010;
+    --theme-compliment-2: #202020;
+    --theme-light-bg: #fff;
+    --theme-light-compliment-1: #f0f0f0;
+    --theme-light-compliment-2: #e6e6e6;
+    --primary-color: #fff;
+    --accent-color-1: #0076ff;
+    --accent-color-2: #ff004c;
+    --accent-color-3: #00d836;
+    --text-title-gradient: linear-gradient(90deg, var(--primary-color), var(--theme-bg) 80%);
+    --text-heading-color: #fff;
+    --text-subheading-color: #bbb;
+    --text-body-color: #989898;
+    --text-footer-color: #757575;
+
+    --text-title-size: 80px;
+    --text-heading-lg-size: 34px;
+    --text-heading-size: 24px;
+    --text-heading-sm-size: 20px;
+    --text-heading-weight: 600;
+    --text-heading-leading: 1.1;
+
+    --text-subheading-lg-size: 15px;
+    --text-subheading-size: 12px;
+    --text-subheading-weight: 500;
+    --text-subheading-leading: 1.2;
+    --text-work-leading: calc(var(--text-body-size)*1.5);
+
+    --text-body-size: 17px;
+    --text-body-weight: 400;
+    --text-body-leading: 1.5;
+
+    --text-spacing: 0.05rem;
+
+    --grid-padding: 1.5rem;
+}
+
+@media (prefers-color-scheme: light) {
+
+    :root {
+        --theme-bg: var(--theme-light-bg);
+        --theme-compliment-1: var(--theme-light-compliment-1);
+        --theme-compliment-2: var(--theme-light-compliment-2);
+        --primary-color: #000;
+
+        --text-heading-color: #000;
+        --text-subheading-color: #606060;
+        --text-body-color: #777777;
+        --text-footer-color: grey;
+    }
+
+}
+
+@media (min-width: 500px) {
+
+    :root {
+        --text-heading-lg-size: 44px;
+        --text-heading-size: 30px;
+        --text-heading-sm-size: 22px;
+        --text-subheading-lg-size: 15px;
+        --text-subheading-size: 12px;
+        --text-body-size: 18px;
+    }
+}
+
+@media (min-width: 860px) {
+
+    :root {
+        --text-title-size: 140px;
+        --text-heading-lg-size: 48px;
+        --text-heading-size: 32px;
+        --text-heading-sm-size: 24px;
+        --text-subheading-lg-size: 16px;
+        --text-subheading-size: 14px;
+        --text-body-size: 20px;
+
+        --grid-padding: 2rem;
+    }
+}
+
+@media (min-width: 1080px) {
+
+    :root {
+        --text-heading-lg-size: 60px;
+        --text-heading-size: 40px;
+        --text-heading-sm-size: 28px;
+        --text-subheading-lg-size: 17px;
+        --text-subheading-size: 15px;
+        --text-body-size: 20px;
+    }
+}
